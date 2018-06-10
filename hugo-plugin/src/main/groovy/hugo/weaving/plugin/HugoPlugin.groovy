@@ -26,10 +26,8 @@ class HugoPlugin implements Plugin<Project> {
     }
 
     project.dependencies {
-      debugImplementation 'com.github.idesade.hugo:hugo-runtime:1.2.2'
-      // TODO this should come transitively
-      debugImplementation 'org.aspectj:aspectjrt:1.9.1'
-      implementation 'com.github.idesade.hugo:hugo-annotations:1.2.2'
+      debugImplementation 'com.github.idesade.hugo:hugo-runtime:1.2.6'
+      implementation 'com.github.idesade.hugo:hugo-annotations:1.2.6'
     }
 
     project.extensions.create('hugo', HugoExtension)
